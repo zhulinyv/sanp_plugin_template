@@ -14,7 +14,7 @@
 
 ## 快速上手
 
-如果你是对 Gradio 和 Python 不是很熟悉的同学, 那么请阅读这一部分.
+如果你对 Gradio 和 Python 不是很熟悉, 但又想开发自己的随机文生图插件, 那么请阅读这一部分.
 
 ### 1. 克隆仓库
 
@@ -67,4 +67,4 @@ def prompt():
 
 以上内容旨在帮助小白快速开发自己的随机文生图插件.
 
-如果你对 Python 和 Gradio 比较熟悉, 那么请看 [Semi-Auto-NovelAI-to-Pixiv](https://github.com/zhulinyv/Semi-Auto-NovelAI-to-Pixiv) 项目 [Wiki](https://github.com/zhulinyv/Semi-Auto-NovelAI-to-Pixiv/wiki/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/a50e3767fbccdfa78a6fe8f10c127114d18fd1f3)
+如果你对 Python 和 Gradio 比较熟悉, 那么请看 [Semi-Auto-NovelAI-to-Pixiv](https://github.com/zhulinyv/Semi-Auto-NovelAI-to-Pixiv/wiki/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91)
