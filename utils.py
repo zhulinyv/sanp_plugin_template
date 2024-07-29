@@ -1,6 +1,6 @@
 import random
 
-from src.t2i import t2i_by_hand
+from src.text2image_nsfw import t2i_by_hand
 from utils.env import env
 from utils.utils import format_str, sleep_for_cool
 
