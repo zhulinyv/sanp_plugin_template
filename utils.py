@@ -17,7 +17,7 @@ def t2i():
         random.choice(["832x1216", "1024x1024", "1216x832"])
         if env.img_size == -1
         else "{}x{}".format(env.img_size[0], env.img_size[1])
-    )
+    ).split("x")
     scale = env.scale
     sampler = env.sampler
     noise_schedule = env.noise_schedule
@@ -28,7 +28,8 @@ def t2i():
     img = t2i_by_hand(
         positive,
         negative,
-        resolution,
+        resolution[0],
+        resolution[1],
         scale,
         sampler,
         noise_schedule,
