@@ -6,8 +6,8 @@ from utils.utils import format_str, sleep_for_cool
 
 
 def prompt():
-    positive = ...
-    negative = ...
+    positive = "..."
+    negative = "..."
     return format_str(positive), format_str(negative)
 
 
@@ -25,6 +25,8 @@ def t2i():
     sm = env.sm
     sm_dyn = env.sm_dyn
     seed = random.randint(1000000000, 9999999999) if env.seed == -1 else env.seed
+    variety = env.variety
+    decrisp = env.decrisp
     img = t2i_by_hand(
         positive,
         negative,
@@ -37,7 +39,14 @@ def t2i():
         sm,
         sm_dyn,
         seed,
-        times=1,
+        variety,
+        decrisp,
+        1,
+        True,
+        False,
+        "",
+        "",
+        "A1",
     )
     sleep_for_cool(env.t2i_cool_time - 6, env.t2i_cool_time + 6)
-    return img
+    return img[0]
